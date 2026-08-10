@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bgcolor: hsl(212, 45%, 89%);
+  --body-fs: 15px;
+  --card-bgcolor: hsl(0, 0%, 100%);
+  --h2-color: hsl(218, 44%, 22%);
+  --p-color: hsl(216, 15%, 48%);
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--body-bgcolor);
+  font-size: var(--body-fs);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: hsl(218, 44%, 22%);
+  padding: 1rem 0;
+}
+
+.card {
+  background-color: var(--card-bgcolor);
+  width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+}
+.card figure {
+  border-radius: inherit;
+  margin-bottom: 1rem;
+}
+.card figure img {
+  max-width: 100%;
+  border-radius: inherit;
+}
+
+.card .text {
+  padding: 0 0.8rem;
+}
+
+.card .text h2 {
+  color: var(--h2-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card .text p {
+  color: var(--p-color);
+}
+
+footer a:any-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: var(--p-color);
+}
